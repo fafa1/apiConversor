@@ -11,6 +11,7 @@ const cors = require('cors')
 const express = require('express')
 const app = express()
 
+// talvez essas duas linhas nao precise a não ser que queira enviar um texto
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
@@ -22,6 +23,8 @@ app.post('/pdfFile', multipartMiddleware, (req, res) => {
   arquivoPDF = req.files.arquivo
   // passo o nome do arquivo como parameto uma vez que o arquivo esta na pasta
   converterMerge(req.files.arquivo.name)
+
+  // usar o send do arquivo mergado
 })
 
 // ver para colocar no final
