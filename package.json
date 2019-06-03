@@ -7,20 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fafa1/converterPDF.git"
-  },
   "keywords": [
     "pdf",
     "image"
   ],
   "author": "fagner",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fafa1/converterPDF/issues"
-  },
-  "homepage": "https://github.com/fafa1/converterPDF#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "connect-multiparty": "^2.2.0",
